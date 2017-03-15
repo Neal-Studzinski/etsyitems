@@ -1,3 +1,14 @@
+img {
+  width: 100%; }
 
+h1 {
+  font-size: 17px;
+  font-family: sans-serif;
+  text-align: left; }
+
+h2 {
+  font-size: 22px;
+  font-family: sans-serif;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
