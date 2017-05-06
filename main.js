@@ -38,13 +38,13 @@ ansOutput3.innerHTML = item.title + " costs " +  '£' + item.price;
 
 
 // #4
-var IsWood = items.filter(function (currentItem, index, array) {
+var isWood = items.filter(function (currentItem, index, array) {
    return currentItem.materials.some(function(currentItem, index, array) {
-     return currentItem === 'wood';
-   });
-});
+     return currentItem === 'wood'; // some() is a method that tests whether
+   }); // some element in the array passes the test implemented by the provided
+}); // function
 
-var hasWood = IsWood.map(function(item, index, array) {
+var hasWood = isWood.map(function(item, index, array) {
  return '<li>' + item.title + ' is made of wood.</li>';
 });
 
@@ -53,7 +53,11 @@ hasWood.forEach(function(item, index, array) {
  ansOutput4.innerHTML += item;
 });
 
-
-
-
 // #5
+var isHomemade = items.filter(function(currentItem, index, array) {
+  return currentItem.who_made.some(function(currentItem, index, array) {
+
+    return currentItem ===
+  }
+
+// #6
